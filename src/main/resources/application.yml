@@ -1,0 +1,22 @@
+# Application Conf
+server:
+  port: 8810
+  servlet:
+    context-path: /api
+
+# Spring conf
+spring:
+  application:
+    name: insights-storage
+
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+
+# Logging level [all, trace, info, warn, error, off]. Default value: error.
+azure:
+  application-insights:
+    logger:
+      level: all
